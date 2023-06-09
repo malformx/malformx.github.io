@@ -1,7 +1,7 @@
 ---
 title: From Traffic Fines to Digital Mines - Unleashing the secret files of Echallan
 author: malformX
-date: 2023-06-04 00:28:00 +0530
+date: 2023-06-09 00:28:00 +0530
 categories: [Bugs, Findings]
 tags: [BUGBOUNTY, SQLI, WEB, INJECTION]
 ---

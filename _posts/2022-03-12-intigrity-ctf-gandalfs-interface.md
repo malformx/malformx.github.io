@@ -121,6 +121,6 @@ After running the script we get the output `PhaC$@B4ad@!F!H@`. Now that we have 
 ![image-20220312232337407](/commons/posts/intigrity-gandalfs-interface/image-20220312232337407.png)
 
 > Note i escaped special characters in `PhaC$@B4ad@!F!H@` because bash/zsh will misinterpret them.
-{: .prompt-note}
+{: .prompt-tip}
 
 And that's it. We got the flag.

@@ -183,7 +183,7 @@ _Fig 31: Filtering the IP and PORT in wireshark_
 We can Follow the stream as TCP stream by right clicking on the first packet and choosing TCP Stream under Follow menu. Then we'll get a nice TCP stream on that session. We can already see all the command executed on that reverse shell session. 
 
 > Note:  mimikatz is downloaded and the output is saved in C:\Temp after executing it.
-{: .prompt-note}
+{: .prompt-tip}
 
 ![image-20220729000115480](/commons/posts/2022-07-28-hacky-holidays-unlock-the-city-stoptheheist.assets/image-20220729000115480.png)
 _Fig 32: Reverseshell session_

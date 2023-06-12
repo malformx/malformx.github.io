@@ -27,7 +27,7 @@ _Fig 3: Finding recently modified files_
 
 It just seems like a nice little image that looks fresh. Also, we can explore a bit more and go through important files and directories, see if anything shows up. But i'll save you the time that i lost miserably and get to the business directly. If we try hard and recall 2 seconds ago, we saw that the author used the word `change` 3 times in the description. Well, it turns out, that is a hint. 
 > _Remember kids: Unlike me, always read the description._
-{: .prompt-note}
+{: .prompt-tip}
 
 ![](https://64.media.tumblr.com/e601cd9f8a0ff41797e3c06ce355d1c8/6461d05495bb4506-40/s540x810/728cd6c8b6ff9a6a92e848d56f7cc56e4d488f69.gif)
 
@@ -146,7 +146,7 @@ So we can simply use python to milk out a program that can do the XOR thing for 
 _Fig 23: Mirroring the XOR login in python_
 
 > make sure to change this `*DAT_00104018 = 4;`  to `DAT_00104018[0] = 4;` as we're using python, we need to specify the initial element position in the list.
-{: .prompt-note}
+{: .prompt-tip}
 
 After copying `local_10` and XOR the whole thing, we get the flag.
 

@@ -30,7 +30,7 @@ _Looking for exploit in searchsploit_
 Normally, one can't access the directories above his current user directory in FTP. But this particular FTP service has directory traversal bug which allows access to directories that are outside the current directory.
 
 > Note, there is another user called admin and there is a ssh dir.
-{: .prompt-note}
+{: .prompt-tip}
 
 ![image-20220711190712082](/commons/posts/2022-07-31-hacky-holidays-unlock-the-city-factory-reset.assets/image-20220711190712082.png)
 _Interactive FTP shell_
@@ -68,7 +68,7 @@ _Other chmod perms_
 We can create a ssh key pair and copy our public key to `../admin/.ssh/authorized_keys`. By doing this, the SSH service can be accessed using our private SSH key. 
 
 >  At this point, we have no idea that the ftp server is running by the admin user. But we can try and see if it works anyways.
-{: .prompt-note}
+{: .prompt-tip}
 
 So i created a SSH keypair using `ssh-keygen` on my VM.  
 
@@ -108,7 +108,7 @@ _Part 3 description_
 
 Root access can be gained easily if the bash_history of the admin user is read. It will have a command history which takes advantage of a SUID binary. But I'll cover the enumeration part and move on from there. We can use [Linpeas](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)  to auto enumerate the box. After executing Linpeas we will find a SUID binary in a intended way. Now that there is ssh access, the Linpeas script can be copied to the remote box using SFTP.
 > When we get reverse shell instead of a fully interactive SSH shell, other methods can be used to get the enumeration script into the machine by using curl, wget, nc, python http server and so on.
-{: .prompt-note}
+{: .prompt-tip}
 
 ![image-20220711191517513](/commons/posts/2022-07-31-hacky-holidays-unlock-the-city-factory-reset.assets/image-20220711191517513.png)
 _Copying file to the remote box using SFTP_

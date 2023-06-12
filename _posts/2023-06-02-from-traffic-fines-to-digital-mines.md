@@ -142,7 +142,7 @@ So in conclusion i held the whole database of traffic challan website for the co
 ## Timeline
 
 > I've reported it on the end of march. They fixed the vulnerabilty later on. I kept asking them for any update, but i haven't got any so far other than the auto generated mail.
-{: .prompt-note}
+{: .prompt-tip}
 
 ![](/commons/posts/2023-06-02-from-traffic-fines-to-digital-mines.assets/2023-06-12_15-55.png)
 _Fig 20: Overall Timeline_

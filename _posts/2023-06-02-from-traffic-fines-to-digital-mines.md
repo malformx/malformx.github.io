@@ -138,3 +138,16 @@ _Fig 19: File_Read using SQLi_
 So in conclusion i held the whole database of traffic challan website for the cost of 1000rs.
 
 ![](https://media.tenor.com/2GBd-X60Tl8AAAAd/ramdev-baba-to-indian-government-pawpaw.gif)
+
+## Timeline
+
+> I've reported it on the end of march. They fixed the vulnerabilty later on. I kept asking them for any update, but i haven't got any so far other than the auto generated mail.
+{: .prompt-note}
+
+![](/commons/posts/2023-06-02-from-traffic-fines-to-digital-mines.assets/2023-06-12_15-55.png)
+_Fig 20: Overall Timeline_
+
+I also got a incident id from CERT-IN, but don't know what they meant by that. They treated it as incident i guess.
+
+![](/commons/posts/2023-06-02-from-traffic-fines-to-digital-mines.assets/2023-06-12_15-57.png)
+_Fig 21: CERT-IN Incident ID_

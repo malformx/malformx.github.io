@@ -17,7 +17,7 @@ Just near the bus stop there were a dozen of police personnel standing. It was s
 
 We sighed, pushed our bike to the side and got to the police. We thought we would get a chance to explain our side however, we got challan instead! challans first explanation later! We've got 1000rs fine. We tried to request them to maybe reduce it. But it was the least amount according to one of them.
 
-We took the challan, got to our bike and just stood there in the rain and just looked at each other for a brief period of time without uttering a word. We didn't have that much money. We used to forcefully collect coins from each other's pockets just to by one egg puff. So 1000 was a big deal. Not to mention we already used up our quota on the movie.
+We took the challan, got to our bike and just stood there in the rain and looked at each other for a brief period of time without uttering a word. We didn't have that much money. We used to forcefully collect coins from each other's pockets just to buy one egg puff. So 1000 was a big deal. Not to mention we already used up our quota on the movie.
 
 Anyways, once more we just emptied our pockets and tried to pay the challan online, but our challan didn’t get updated in the E-Challan website at that time. After a day i  paid the fine. Fortunately my browser was running through burp the whole time.
 

